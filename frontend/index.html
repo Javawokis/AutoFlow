@@ -8,11 +8,79 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
-    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!--Inicia sección Misión y Visión by Roble-->
+    <section class="container py-5">
+
+        <!-- Intro: texto + imagen -->
+        <div class="row align-items-center g-4 g-lg-5 mb-4">
+            <div class="col-lg-6">
+                <span class="af-badge mb-3">
+                    <i class="fa-solid fa-rocket"></i> Tecnología con propósito
+                </span>
+
+                <h1 class="af-titulo mb-3">Los pequeños negocios merecen grandes herramientas.</h1>
+
+                <p class="af-lead mb-3">
+                    AutoFlow nace para acercar la automatización comercial a las PyMEs.
+                    Creemos que vender por WhatsApp debe ser sencillo, organizado y cercano,
+                    sin importar el tamaño de tu equipo.
+                </p>
+
+                <span class="af-nota">
+                    <i class="fa-solid fa-graduation-cap"></i> Una solución desarrollada como proyecto integrador
+                </span>
+            </div>
+
+            <div class="col-lg-6">
+                <figure class="af-imagen mb-0">
+                    <!-- Cambia el src por la ruta de tu imagen -->
+                    <img src="https://cdn.pixabay.com/photo/2015/01/08/18/11/laptops-593296_1280.jpg" alt="Equipo trabajando junto en laptops"
+                        onerror="this.style.display='none'">
+                    <figcaption class="af-imagen-leyenda">
+                        <i class="fa-solid fa-users"></i> De una idea compartida a una solución útil.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <!-- Misión y visión -->
+        <div class="row g-4">
+            <div class="col-md-6">
+                <article class="af-card af-oculto">
+                    <div class="af-card-etiqueta">
+                        <span class="af-card-icono"><i class="fa-solid fa-bullseye"></i></span>
+                        Nuestra misión
+                    </div>
+                    <h2>Simplificar el comercio cotidiano.</h2>
+                    <p>
+                        Ayudar a las PyMEs a automatizar cotizaciones, catálogos y envíos por
+                        WhatsApp, para que dediquen más tiempo a sus clientes y a hacer crecer
+                        su negocio.
+                    </p>
+                </article>
+            </div>
+
+            <div class="col-md-6">
+                <article class="af-card af-oculto">
+                    <div class="af-card-etiqueta">
+                        <span class="af-card-icono"><i class="fa-solid fa-eye"></i></span>
+                        Nuestra visión
+                    </div>
+                    <h2>Que crecer no sea más complicado.</h2>
+                    <p>
+                        Ser una plataforma accesible de automatización comercial para pequeños
+                        negocios en México, donde la tecnología sea una aliada y no una barrera.
+                    </p>
+                </article>
+            </div>
+        </div>
+
+    </section>
+    <!--Termina sección Misión y Visión by Roble-->
+
     <!--Inicia sección de Kevin-->
     <section class="container py-5">
         <!-- Encabezado superior estilizado con utilidades de Bootstrap -->
@@ -67,10 +135,6 @@
         </div>
     </section>
     <!--Termina sección de Kevin-->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
 
     <section class="container">
 
@@ -217,6 +281,29 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7eb6f35784.js" crossorigin="anonymous"></script>
+
+    <script>
+        // Muestra las tarjetas de misión y visión con una entrada suave al hacer scroll
+        document.addEventListener("DOMContentLoaded", () => {
+            const tarjetas = document.querySelectorAll(".af-oculto");
+
+            if (!("IntersectionObserver" in window)) {
+                tarjetas.forEach(t => t.classList.add("af-visible"));
+                return;
+            }
+
+            const observador = new IntersectionObserver((entradas, obs) => {
+                entradas.forEach(entrada => {
+                    if (entrada.isIntersecting) {
+                        entrada.target.classList.add("af-visible");
+                        obs.unobserve(entrada.target);
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            tarjetas.forEach(t => observador.observe(t));
+        });
+    </script>
 </body>
 
 </html>

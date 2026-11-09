@@ -138,3 +138,128 @@ body {
 @media (max-width: 520px) {
     .lead-text { max-width: none; }
 }
+
+/* ===== Inicio sección Intro, Misión y Visión by Roble===== */
+.af-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--icon-bg);
+    color: var(--primary);
+    border: 1px solid #e4d6fb;
+    border-radius: 50rem;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.af-titulo {
+    color: var(--text);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.af-lead {
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    max-width: 34rem;
+}
+
+.af-nota {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--primary);
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+/* Imagen con leyenda */
+.af-imagen {
+    border-radius: 1.25rem;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: linear-gradient(135deg, #d9c9f7, #efe7ff);
+}
+
+.af-imagen img {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.af-imagen-leyenda {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--banner);
+    color: var(--primary);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+}
+
+/* Tarjetas misión / visión */
+.af-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.5rem;
+    height: 100%;
+}
+
+.af-card-etiqueta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary);
+    font-size: 0.72rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.af-card-icono {
+    display: inline-grid;
+    place-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: var(--icon-bg);
+    font-size: 0.7rem;
+}
+
+.af-card h2 {
+    color: var(--text);
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+}
+
+.af-card p {
+    color: var(--muted);
+    font-size: 0.8rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Animación de entrada de las tarjetas */
+.af-oculto {
+    opacity: 0;
+    transform: translateY(12px);
+}
+
+.af-visible {
+    opacity: 1;
+    transform: none;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .af-oculto { opacity: 1; transform: none; }
+    .af-visible { transition: none; }
+}
+/* ===== Fin sección Intro, Misión y Visión by Roble===== */
