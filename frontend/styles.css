@@ -1,0 +1,124 @@
+:root {
+    --bg: #f9fafc;
+    --card: #ffffff;
+    --border: #e6e8ef;
+    --text: #1c1b29;
+    --muted: #6b7084;
+    --primary: #7c4dff;
+    --icon-bg: #f0eafe;
+    --banner: #efe8ff;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+.section {
+    max-width: 1000px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+/* Encabezado */
+.eyebrow {
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin: 0 0 12px;
+}
+
+.titulo {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.lead-text {
+    max-width: 240px;
+    font-size: 11.5px;
+    line-height: 1.6;
+    color: var(--muted);
+    margin: 0;
+}
+
+/* Tarjetas */
+.card-rol {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 16px 16px 18px;
+}
+
+.icono {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    background: var(--icon-bg);
+    color: var(--primary);
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.card-rol h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+
+.card-rol p {
+    font-size: 11.5px;
+    line-height: 1.6;
+    color: var(--muted);
+    margin: 0 0 12px;
+}
+
+.tag {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+/* Banner */
+.banner {
+    background: var(--banner);
+    border-radius: 16px;
+    padding: 22px 18px;
+}
+
+.banner h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 4px;
+}
+
+.banner span {
+    font-size: 11px;
+    color: var(--muted);
+}
+
+.btn-conversemos {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--primary);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+.btn-conversemos:hover {
+    background: #6a3df0;
+    color: #fff;
+}
+
+@media (max-width: 520px) {
+    .lead-text { max-width: none; }
+}
