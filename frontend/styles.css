@@ -1,0 +1,16 @@
+/*Inicio de sección de Kevin */
+
+/* color morado en la frase superior */
+.text-purple-brand {
+    color: #6f42c1;
+    letter-spacing: 0.12rem; /* Mantiene el espaciado */
+}
+
+/* 2. Color morado en los iconos (Compatible con FontAwesome JS) */
+.feature-icon svg, 
+.feature-icon i {
+    color: #6f42c1;
+    fill: #6f42c1; /* Asegura el color si el navegador lo interpreta como vector SVG */
+}
+
+/*Final de sección de Kevin */
