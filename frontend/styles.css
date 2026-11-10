@@ -263,3 +263,93 @@ body {
     .af-visible { transition: none; }
 }
 /* ===== Fin sección Intro, Misión y Visión by Roble===== */
+
+
+/* Inicio navbar */
+/* ===== Navbar ===== */
+.navbar-af {
+    background: #ffffff;
+    border-bottom: 1px solid var(--border);
+    padding: 14px 0;
+}
+
+.brand-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    background: var(--primary);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+}
+
+.brand-text {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--text);
+}
+
+.navbar-af .nav-link {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--muted);
+    padding: 8px 14px;
+    border-radius: 10px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.navbar-af .nav-link:hover {
+    color: var(--primary);
+}
+
+.navbar-af .nav-link.active {
+    background: var(--banner);
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.navbar-af .navbar-toggler {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 6px 10px;
+}
+
+.navbar-af .navbar-toggler:focus {
+    box-shadow: 0 0 0 3px rgba(124, 77, 255, 0.2);
+}
+
+/* Botones de la derecha */
+.btn-nav {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #fff;
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.btn-nav:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.btn-carrito {
+    font-weight: 500;
+}
+
+.badge-carrito {
+    background: var(--banner);
+    color: var(--primary);
+    font-size: 10px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 999px;
+}
