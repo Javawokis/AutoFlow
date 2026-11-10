@@ -2,7 +2,6 @@
 
 > Solución B2B SaaS "llave en mano" diseñada para transformar canales de mensajería (WhatsApp) en puntos de venta inteligentes y autónomos para PyMEs.
 
-![Estado del Proyecto](https://img.shields.io/badge/Estado-En%20Desarrollo-yellow?style=for-the-badge)
 ![Equipo](https://img.shields.io/badge/Team-JAVAWOKIS-blueviolet?style=for-the-badge)
 ![Metodología](https://img.shields.io/badge/Metodología-Scrum-cyan?style=for-the-badge)
 ![Deploy](https://img.shields.io/badge/Cloud-AWS-orange?style=for-the-badge)
@@ -55,12 +54,12 @@ La plataforma web contempla 7 módulos esenciales:
 
 | Integrante | Rol / Responsabilidad Técnica |
 | :--- | :--- |
-| **Patsy Ericka Infante Martinez** | Scrum Master & Front-End Developer |
+| **Patsy Ericka Infante Martinez** | Scrum Master &  Developer |
 | **María del Roble Luna Hernández** | Developer |
 | **María Fernanda García Rocha** | Developer |
 | **Kevin Aldaba Hernandez** | Developer |
 | **Marco Daniel Vazquez Fernández** | Developer |
-| **Yhibran Isai Coria Colón** | Developer |
+| **Yhibran Isai Coria Colón** |  Product Owner, Developer & Front-End Developer |
 
 ---
 
