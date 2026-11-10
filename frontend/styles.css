@@ -391,3 +391,12 @@ body {
       background-color: #7c3aed;
       color: #fff;
     }
+/* Refactor nav y footer */
+.footer-titulo {
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+}
+
+.footer-legal {
+    font-size: 0.75rem;
+}
