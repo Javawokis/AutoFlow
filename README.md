@@ -1,26 +1,79 @@
-# Software Marketplace
+# ⚡ AutoFlow
 
-## Descripción del proyecto
+> Solución B2B SaaS "llave en mano" diseñada para transformar canales de mensajería (WhatsApp) en puntos de venta inteligentes y autónomos para PyMEs.
 
-**Software Marketplace** es una plataforma de comercio electrónico diseñada para la compra y venta de productos de software, en la que cualquier usuario puede crear una cuenta, publicar sus propios productos digitales y ofrecerlos a otros usuarios dentro de la plataforma.
+![Estado del Proyecto](https://img.shields.io/badge/Estado-En%20Desarrollo-yellow?style=for-the-badge)
+![Equipo](https://img.shields.io/badge/Team-JAVAWOKIS-blueviolet?style=for-the-badge)
+![Metodología](https://img.shields.io/badge/Metodología-Scrum-cyan?style=for-the-badge)
+![Deploy](https://img.shields.io/badge/Cloud-AWS-orange?style=for-the-badge)
 
-El objetivo del proyecto es crear un ecosistema digital que conecte a desarrolladores, emprendedores y empresas con personas interesadas en adquirir soluciones tecnológicas, facilitando la comercialización de software en un espacio accesible, intuitivo y seguro.
+---
 
-A diferencia de una tienda de software tradicional, la plataforma adopta un modelo de *marketplace*, permitiendo que múltiples vendedores administren sus publicaciones, gestionen sus productos y den a conocer sus soluciones a una comunidad de compradores.
+## 📌 Descripción del Proyecto
 
-## Objetivos principales
+**AutoFlow** es una plataforma de software como servicio (SaaS) orientada al segmento **B2B** que automatiza la operativa de ventas, cotizaciones y pedidos en tiempo real a través de WhatsApp. 
 
-- **Registro y autenticación:** permitir que cualquier usuario cree una cuenta y acceda a la plataforma.
-- **Marketplace de software:** ofrecer un catálogo de productos digitales publicados por distintos vendedores.
-- **Gestión de productos:** permitir a los vendedores publicar, editar y administrar sus productos de software.
-- **Compra de productos:** facilitar a los compradores la exploración del catálogo y la adquisición de software.
-- **Perfiles de usuario:** proporcionar herramientas para administrar la información de la cuenta y las publicaciones.
-- **Escalabilidad:** desarrollar una arquitectura que permita incorporar nuevas funcionalidades y soportar el crecimiento de la plataforma.
+Está pensada específicamente para pequeñas y medianas empresas (PyMEs), comercios locales, boutiques y tiendas artesanales que sufren saturación operativa al gestionar ventas manuales mediante PDFs, mensajes dispersos y registros en papel.
 
-## Visión del proyecto
+### 💡 Propuesta de Valor ("Done-for-you")
+A diferencia de herramientas genéricas de bots que exigen diseñar flujos complejos o plataformas de comercio que sacan al cliente del chat, **AutoFlow** opera sin fricción técnica:
+- El cliente final consulta el catálogo interactivo, cotiza, realiza su pedido y rastrea entregas **directamente dentro de WhatsApp**.
+- El comercio únicamente se encarga de despachar el producto y supervisar métricas desde su panel de control centralizado.
 
-Construir una plataforma digital que facilite la distribución y comercialización de software, brindando a desarrolladores independientes y empresas la oportunidad de ofrecer sus productos, alcanzar nuevos clientes y formar parte de una comunidad tecnológica.
+---
 
-Este proyecto busca aplicar buenas prácticas de desarrollo de software, diseño de APIs, gestión de bases de datos, seguridad y arquitectura de aplicaciones para construir una solución mantenible y escalable.
+## 🎯 Arquitectura de Vistas (Navegación Web)
 
-**Estado del proyecto:** En desarrollo.
+La plataforma web contempla 7 módulos esenciales:
+
+1. **Página Principal (Home):** Hero banner con propuesta de valor, demostración del flujo en WhatsApp, planes de suscripción y testimonios.
+2. **Catálogo de Soluciones / Paquetes:** Detalle de módulos contratables (cotizaciones dinámicas, gestión de pedidos y seguimiento logístico).
+3. **Página de Formulario (Cotización / Onboarding):** Cuestionario guiado para diagnosticar necesidades del negocio y generar su propuesta.
+4. **Login / Registro:** Autenticación segura y gestión de credenciales para comercios afiliados.
+5. **Dashboard del Cliente:** Panel de administración donde el negocio gestiona su catálogo, inventario, pedidos activos y métricas de clientes.
+6. **Acerca de Nosotros:** Misión, visión, valores y filosofía del equipo de desarrollo.
+7. **Contacto & Soporte:** Formulario de atención técnica y canales de asistencia directa.
+
+---
+
+## 🛠️ Stack Tecnológico
+
+| Capa / Módulo | Tecnología / Herramienta | Aplicación en el Proyecto |
+| :--- | :--- | :--- |
+| **Front-End** | HTML5, CSS3, Bootstrap 5 | Interfaz responsiva, maquetación semántica y accesible |
+| **Lógica de Cliente** | JavaScript (ECMAScript 6+) | Manipulación asíncrona del DOM, validaciones y consumo de APIs |
+| **Back-End** | Java & Spring Boot | Arquitectura de servicios RESTful, seguridad y lógica transaccional |
+| **Base de Datos** | MySQL | Modelado relacional para comercios, pedidos, catálogos y suscripciones |
+| **Testing de APIs** | Postman | Verificación y pruebas funcionales de endpoints |
+| **Versionado & Trabajo en Equipo** | Git & GitHub | Flujo de trabajo basado en ramas por feature, Pull Requests y Code Reviews |
+| **Prototipado UI/UX** | Figma | Diseño visual de interfaces, mockups y flujo de usuario |
+| **Despliegue & Cloud** | AWS | Infraestructura en la nube para el entorno de producción |
+
+---
+
+## 👥 Equipo de Desarrollo (JAVAWOKIS)
+
+| Integrante | Rol / Responsabilidad Técnica |
+| :--- | :--- |
+| **Patsy Ericka Infante Martinez** | Scrum Master & Front-End Developer |
+| **María del Roble Luna Hernández** | Developer |
+| **María Fernanda García Rocha** | Developer |
+| **Kevin Aldaba Hernandez** | Developer |
+| **Marco Daniel Vazquez Fernández** | Developer |
+| **Yhibran Isai Coria Colón** | Developer |
+
+---
+
+## 🚀 Puesta en Marcha en Local
+
+### Prerrequisitos
+- **Java JDK 17+**
+- **Node.js** (opcional, para herramientas de build si aplican)
+- **MySQL Server 8.0+**
+- **Git**
+- IDE recomendado: IntelliJ IDEA, VS Code o Eclipse
+
+### 1. Clonar el repositorio
+```bash
+git clone [https://github.com/Javawokis/autoflow.git](https://github.com/Javawokis/autoflow.git)
+cd autoflow
