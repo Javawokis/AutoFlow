@@ -353,3 +353,13 @@ body {
     padding: 3px 8px;
     border-radius: 999px;
 }
+
+/* Refactor nav y footer */
+.footer-titulo {
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+}
+
+.footer-legal {
+    font-size: 0.75rem;
+}
