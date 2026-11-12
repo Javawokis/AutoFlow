@@ -12,8 +12,8 @@
     color: #6f42c1;
     fill: #6f42c1; /* Asegura el color si el navegador lo interpreta como vector SVG */
 }
-
 /*Final de sección de Kevin */
+
 :root {
     --bg: #f9fafc;
     --card: #ffffff;
