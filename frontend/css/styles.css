@@ -12,8 +12,8 @@
     color: #6f42c1;
     fill: #6f42c1; /* Asegura el color si el navegador lo interpreta como vector SVG */
 }
-
 /*Final de sección de Kevin */
+
 :root {
     --bg: #f9fafc;
     --card: #ffffff;
@@ -66,6 +66,15 @@ body {
     border: 1px solid var(--border);
     border-radius: 16px;
     padding: 16px 16px 18px;
+}
+
+.fotodeperfil {
+    src: url('../assets/images/roble.jpg');
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
 }
 
 .icono {
@@ -352,4 +361,14 @@ body {
     font-weight: 600;
     padding: 3px 8px;
     border-radius: 999px;
+}
+
+/* Refactor nav y footer */
+.footer-titulo {
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+}
+
+.footer-legal {
+    font-size: 0.75rem;
 }
