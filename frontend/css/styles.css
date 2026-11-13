@@ -68,6 +68,15 @@ body {
     padding: 16px 16px 18px;
 }
 
+.fotodeperfil {
+    src: url('../assets/images/roble.jpg');
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
 .icono {
     width: 32px;
     height: 32px;

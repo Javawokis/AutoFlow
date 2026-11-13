@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AutoFlow</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="components.js"></script>
     <link rel="stylesheet" href="../css/styles.css">
@@ -41,8 +42,8 @@
             <div class="col-lg-6">
                 <figure class="af-imagen mb-0">
                     <!-- Cambia el src por la ruta de tu imagen -->
-                    <img src="https://cdn.pixabay.com/photo/2015/01/08/18/11/laptops-593296_1280.jpg" alt="Equipo trabajando junto en laptops"
-                        onerror="this.style.display='none'">
+                    <img src="https://cdn.pixabay.com/photo/2015/01/08/18/11/laptops-593296_1280.jpg"
+                        alt="Equipo trabajando junto en laptops" onerror="this.style.display='none'">
                     <figcaption class="af-imagen-leyenda">
                         <i class="fa-solid fa-users"></i> De una idea compartida a una solución útil.
                     </figcaption>
@@ -153,41 +154,67 @@
         </div>
 
         <!-- Tarjetas -->
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
+        <div class="container-fluid">
 
             <div class="col">
-                <article class="card-rol h-100">
+            </div>
+            <article class="card-rol h-100">
+                <div class="fotoContacto">
+                    <img src="fotosDeContacto\isai.png" alt="ProductOwner" class="fotocontacto">
                     <div class="icono"><i class="fa-brands fa-figma"></i></div>
-                    <h3>Diseño UX/UI</h3>
-                    <p>Investigación, flujos de navegación y sistema visual.</p>
-                    <span class="tag">Experiencia clara</span>
-                </article>
-            </div>
+                    <h3>Product Owner</h3>
+                    <p>Enlace producción - cliente</p>
+            </article>
+        </div>
 
-            <div class="col">
-                <article class="card-rol h-100">
+        <div class="col">
+            <article class="card-rol h-100">
+                <div class="fotoContacto">
+                    <img src="fotosDeContacto\eri.png" alt="ScrumMaster" class="fotocontacto">                
                     <div class="icono"><i class="fa-solid fa-code"></i></div>
-                    <h3>Desarrollo frontend</h3>
-                    <p>Interfaces accesibles, responsivas y consistentes.</p>
-                    <span class="tag">Interacción cuidada</span>
+                    <h3>Scrum master</h3>
+                    <p>Dirección de equipo</p>
+            </article>
+        </div>
+
+        <div class="col">
+            <article class="card-rol h-100">
+                <img src="fotosDeContacto\marco.png" alt="BackEnd" class="fotocontacto">
+                <div class="icono"><i class="fa-solid fa-database"></i></div>
+                <h3>Desarrollo backend</h3>
+                <p>Operación confiable</p>
+            </article>
+        </div>
+
+        </div>
+        <div class=container-fluid>
+
+            <div class="col">
+                <article class="card-rol h-100">
+                    <div class="fotoContacto">
+                        <img src="fotosDeContacto\fer.png" alt="UX/UI" class="fotocontacto">
+                        <div class="icono"><i class="fa-brands fa-figma"></i></div>
+                        <h3>Diseño UX/UI</h3>
+                        <p>Interfaces y diseño</p>
                 </article>
             </div>
 
             <div class="col">
                 <article class="card-rol h-100">
+                    <div class="fotoContacto">
+                        <img src="fotosDeContacto\kevin.png" alt="developer" class="fotocontacto">
+                        <div class="icono"><i class="fa-solid fa-code"></i></div>
+                        <h3>Developer</h3>
+                        <p>Operación confiable</p>
+                </article>
+            </div>
+
+            <div class="col">
+                <article class="card-rol h-100">
+                    <img src="fotosDeContacto\roble.png" alt="developer" class="fotocontacto">
                     <div class="icono"><i class="fa-solid fa-database"></i></div>
-                    <h3>Desarrollo backend</h3>
-                    <p>Datos, servicios e integración de la lógica comercial.</p>
-                    <span class="tag">Operación confiable</span>
-                </article>
-            </div>
-
-            <div class="col">
-                <article class="card-rol h-100">
-                    <div class="icono"><i class="fa-solid fa-clipboard-check"></i></div>
-                    <h3>Gestión y calidad</h3>
-                    <p>Planeación, documentación y pruebas de la solución.</p>
-                    <span class="tag">Entrega con propósito</span>
+                    <h3>Developer</h3>
+                    <p>Operación confiable</p>
                 </article>
             </div>
 
@@ -206,11 +233,13 @@
 
     </section>
 
-     <!--Footer-->
+    <!--Footer-->
     <div data-include="components/footer.html"></div>
 
     <!-- SCRIPT DE BOOTSTRAP 5.3 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
     <!-- SCRIPT DE ICONOS -->
     <script src="https://kit.fontawesome.com/7eb6f35784.js" crossorigin="anonymous"></script>
 
