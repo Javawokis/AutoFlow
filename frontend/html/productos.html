@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - AutoFlow</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- Inicia Navbar -->
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-af sticky-top">
+            <div class="container">
+    
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                    <span class="brand-icon"><i class="fa-solid fa-diagram-project"></i></span>
+                    <span class="brand-text">AutoFlow</span>
+                </a>
+    
+                <!-- Botón hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+    
+                    <!-- Enlaces -->
+                    <ul class="navbar-nav mx-lg-auto gap-lg-1 my-3 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                    </ul>
+    
+                    <!-- Acciones -->
+                    <div class="d-flex flex-column flex-lg-row gap-2">
+                        <a href="#" class="btn-nav btn-login">Iniciar sesión</a>
+                        <a href="#" class="btn-nav btn-carrito">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            Carrito
+                            <span class="badge-carrito">0</span>
+                        </a>
+                    </div>
+    
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Termina Navbar -->
+
+    <!-- Inicia Sección Productos -->
+
+    <main class="py-5">
+        <div class="container" style="max-width: 1140px;">
+          
+          <!-- Encabezado de la sección -->
+          <div class="row align-items-end mb-4">
+            <div class="col-lg-8">
+              <div class="badge-autoflow mb-3">
+                <i class="bi bi-grid"></i> SOLUCIONES A TU MEDIDA
+              </div>
+              <h1 class="fw-bold display-5 mb-3" style="letter-spacing: -0.03em; color: #111827;">
+                El siguiente paso de tu negocio empieza con el plan correcto.
+              </h1>
+              <p class="text-muted fs-6 mb-0">
+                Elige una solución completa o suma justo el módulo que necesitas. Tú decides cómo crecer.
+              </p>
+            </div>
+            
+            <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+              <div class="fw-semibold small" style="color: var(--af-purple);">
+                <i class="bi bi-calendar-event me-1"></i> Facturación mensual
+              </div>
+              <div class="text-muted" style="font-size: 0.78rem;">
+                Precios en MXN · IVA incluido
+              </div>
+            </div>
+          </div>
+      
+          <!-- Barra de filtros y contador -->
+          <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4 pb-2">
+            <div class="filter-pills" role="tablist">
+              <button class="filter-btn active" data-filter="all">
+                Todos <span class="count">6</span>
+              </button>
+              <button class="filter-btn" data-filter="plan">
+                Planes <span class="count">3</span>
+              </button>
+              <button class="filter-btn" data-filter="modulo">
+                Módulos <span class="count">3</span>
+              </button>
+            </div>
+            <span class="text-muted small" id="solutions-count">6 soluciones disponibles</span>
+          </div>
+      
+          <!-- Grid de Productos (Planes y Módulos) -->
+          <div class="row g-4" id="products-grid">
+      
+            <!-- Plan Esencial -->
+            <div class="col-md-6 col-lg-4 product-item" data-category="plan">
+              <div class="plan-card">
+                <div>
+                  <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="plan-icon"><i class="bi bi-flower1"></i></div>
+                    <span class="plan-tag">Plan mensual</span>
+                  </div>
+                  <h3 class="h4 fw-bold mb-1">Plan Esencial</h3>
+                  <p class="text-muted small mb-4">El primer paso para vender sin estar siempre en línea.</p>
+                  
+                  <div class="d-flex align-items-baseline gap-1 mb-2">
+                    <span class="plan-price">$499</span>
+                    <span class="plan-currency">MXN / mes</span>
+                  </div>
+      
+                  <ul class="feature-list">
+                    <li><i class="bi bi-check2"></i> <span>1 número de WhatsApp</span></li>
+                    <li><i class="bi bi-check2"></i> <span>Catálogo de hasta 50 productos</span></li>
+                    <li><i class="bi bi-check2"></i> <span>Respuestas automáticas básicas</span></li>
+                  </ul>
+                </div>
+                <button class="btn btn-af-outline add-to-cart" data-product="Plan Esencial" data-price="499">
+                  Agregar al Carrito <i class="bi bi-plus-lg ms-1"></i>
+                </button>
+              </div>
+            </div>
+      
+            <!-- Plan Crecimiento (Recomendado) -->
+            <div class="col-md-6 col-lg-4 product-item" data-category="plan">
+              <div class="plan-card featured">
+                <div>
+                  <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="plan-icon"><i class="bi bi-rocket-takeoff"></i></div>
+                    <span class="plan-tag recommended"><i class="bi bi-stars me-1"></i> Recomendado</span>
+                  </div>
+                  <h3 class="h4 fw-bold mb-1">Plan Crecimiento</h3>
+                  <p class="text-muted small mb-4">Tu operación conectada, de la consulta a la entrega.</p>
+                  
+                  <div class="d-flex align-items-baseline gap-1 mb-2">
+                    <span class="plan-price">$999</span>
+                    <span class="plan-currency">MXN / mes</span>
+                  </div>
+      
+                  <ul class="feature-list">
+                    <li><i class="bi bi-check2"></i> <span>Todo lo del Plan Esencial</span></li>
+                    <li><i class="bi bi-check2"></i> <span>Cotizador + Catálogo + Envíos</span></li>
+                    <li><i class="bi bi-check2"></i> <span>Hasta 500 productos y 3 usuarios</span></li>
+                  </ul>
+                </div>
+                <button class="btn btn-af-primary add-to-cart" data-product="Plan Crecimiento" data-price="999">
+                  Agregar al Carrito <i class="bi bi-plus-lg ms-1"></i>
+                </button>
+              </div>
+            </div>
+      
+            <!-- Plan Pro -->
+            <div class="col-md-6 col-lg-4 product-item" data-category="plan">
+              <div class="plan-card">
+                <div>
+                  <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="plan-icon"><i class="bi bi-award"></i></div>
+                    <span class="plan-tag">Plan mensual</span>
+                  </div>
+                  <h3 class="h4 fw-bold mb-1">Plan Pro</h3>
+                  <p class="text-muted small mb-4">Más capacidad y control para un negocio que no se detiene.</p>
+                  
+                  <div class="d-flex align-items-baseline gap-1 mb-2">
+                    <span class="plan-price">$1,799</span>
+                    <span class="plan-currency">MXN / mes</span>
+                  </div>
+      
+                  <ul class="feature-list">
+                    <li><i class="bi bi-check2"></i> <span>Todo lo del Plan Crecimiento</span></li>
+                    <li><i class="bi bi-check2"></i> <span>Productos y usuarios ilimitados</span></li>
+                    <li><i class="bi bi-check2"></i> <span>Reportes y soporte prioritario</span></li>
+                  </ul>
+                </div>
+                <button class="btn btn-af-outline add-to-cart" data-product="Plan Pro" data-price="1799">
+                  Agregar al Carrito <i class="bi bi-plus-lg ms-1"></i>
+                </button>
+              </div>
+            </div>
+      
+            <!-- Módulo Cotizador -->
+            <div class="col-md-6 col-lg-4 product-item" data-category="modulo">
+              <div class="plan-card">
+                <div>
+                  <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="plan-icon"><i class="bi bi-calculator"></i></div>
+                    <span class="plan-tag">Módulo mensual</span>
+                  </div>
+                  <h3 class="h4 fw-bold mb-1">Cotizador</h3>
+                  <p class="text-muted small mb-4">Cotizaciones claras y automáticas en cada conversación.</p>
+                  
+                  <div class="d-flex align-items-baseline gap-1 mb-2">
+                    <span class="plan-price">$249</span>
+                    <span class="plan-currency">MXN / mes</span>
+                  </div>
+      
+                  <ul class="feature-list">
+                    <li><i class="bi bi-check2"></i> <span>Cálculo de precios y cantidades</span></li>
+                    <li><i class="bi bi-check2"></i> <span>Descuentos por volumen</span></li>
+                    <li><i class="bi bi-check2"></i> <span>Resumen de pedido al instante</span></li>
+                  </ul>
+                </div>
+                <button class="btn btn-af-outline add-to-cart" data-product="Cotizador" data-price="249">
+                  Agregar al Carrito <i class="bi bi-plus-lg ms-1"></i>
+                </button>
+              </div>
+            </div>
+      
+            <!-- Módulo Catálogo -->
+            <div class="col-md-6 col-lg-4 product-item" data-category="modulo">
+              <div class="plan-card">
+                <div>
+                  <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="plan-icon"><i class="bi bi-grid-1x2"></i></div>
+                    <span class="plan-tag">Módulo mensual</span>
+                  </div>
+                  <h3 class="h4 fw-bold mb-1">Catálogo</h3>
+                  <p class="text-muted small mb-4">Tus productos, siempre listos para compartir y vender.</p>
+                  
+                  <div class="d-flex align-items-baseline gap-1 mb-2">
+                    <span class="plan-price">$199</span>
+                    <span class="plan-currency">MXN / mes</span>
+                  </div>
+      
+                  <ul class="feature-list">
+                    <li><i class="bi bi-check2"></i> <span>Fotos, variantes y precios</span></li>
+                    <li><i class="bi bi-check2"></i> <span>Disponibilidad de productos</span></li>
+                    <li><i class="bi bi-check2"></i> <span>Envío directo por WhatsApp</span></li>
+                  </ul>
+                </div>
+                <button class="btn btn-af-outline add-to-cart" data-product="Catálogo" data-price="199">
+                  Agregar al Carrito <i class="bi bi-plus-lg ms-1"></i>
+                </button>
+              </div>
+            </div>
+      
+            <!-- Módulo Envíos -->
+            <div class="col-md-6 col-lg-4 product-item" data-category="modulo">
+              <div class="plan-card">
+                <div>
+                  <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="plan-icon"><i class="bi bi-truck"></i></div>
+                    <span class="plan-tag">Módulo mensual</span>
+                  </div>
+                  <h3 class="h4 fw-bold mb-1">Envíos</h3>
+                  <p class="text-muted small mb-4">De la dirección de tu cliente a una entrega organizada.</p>
+                  
+                  <div class="d-flex align-items-baseline gap-1 mb-2">
+                    <span class="plan-price">$299</span>
+                    <span class="plan-currency">MXN / mes</span>
+                  </div>
+      
+                  <ul class="feature-list">
+                    <li><i class="bi bi-check2"></i> <span>Captura de datos de entrega</span></li>
+                    <li><i class="bi bi-check2"></i> <span>Cálculo por zona de cobertura</span></li>
+                    <li><i class="bi bi-check2"></i> <span>Seguimiento del estado de envío</span></li>
+                  </ul>
+                </div>
+                <button class="btn btn-af-outline add-to-cart" data-product="Envíos" data-price="299">
+                  Agregar al Carrito <i class="bi bi-plus-lg ms-1"></i>
+                </button>
+              </div>
+            </div>
+      
+          </div>
+      
+          <!-- Banner CTA Contacto -->
+          <div class="cta-banner d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mt-5">
+            <div class="d-flex align-items-start align-items-md-center gap-3">
+              <div class="fs-4" style="color: var(--af-purple);">
+                <i class="bi bi-chat-square-text"></i>
+              </div>
+              <div>
+                <h4 class="h6 fw-bold mb-1">¿No sabes cuál elegir? Lo vemos contigo.</h4>
+                <p class="text-muted small mb-0">Cuéntanos cómo vendes y te orientamos sin compromiso.</p>
+              </div>
+            </div>
+            <div>
+              <a href="contacto.html" class="btn-cta-white">
+                Contactar al equipo <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+      
+          <!-- Nota aclaratoria inferior -->
+          <p class="text-center text-muted mt-4 mb-0" style="font-size: 0.78rem;">
+            Los módulos se contratan por separado. Cotizador, Catálogo y Envíos ya están incluidos en los planes Crecimiento y Pro.
+          </p>
+      
+        </div>
+      </main>
+
+    <!-- Fin Sección Productos -->
+
+    <!-- Inicio de filtros -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const filterButtons = document.querySelectorAll('.filter-btn');
+          const productItems = document.querySelectorAll('.product-item');
+          const countLabel = document.getElementById('solutions-count');
+      
+          filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+              // Actualizar estado activo del botón
+              filterButtons.forEach(b => b.classList.remove('active'));
+              btn.classList.add('active');
+      
+              const filterValue = btn.getAttribute('data-filter');
+              let visibleCount = 0;
+      
+              productItems.forEach(item => {
+                if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                  item.style.display = 'block';
+                  visibleCount++;
+                } else {
+                  item.style.display = 'none';
+                }
+              });
+      
+              countLabel.textContent = `${visibleCount} ${visibleCount === 1 ? 'solución disponible' : 'soluciones disponibles'}`;
+            });
+          });
+        });
+      </script>
+
+    <!-- Inicio de filtros -->
+
+
+    <!-- Inicia Footer -->
+    <footer class="bg-white text-secondary pt-5 pb-4 border-top" id="footer">
+         <!--Footer-->
+         <footer class="bg-white text-secondary pt-5 pb-4 border-top" id="footer">
+            <div class="container">
+                <!-- Sección superior -->
+                <div class="row gy-4 mb-4">
+    
+                    <div class="col-12 col-md-5">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <img src="./Resources/autoflow_icono.png" alt="AutoFlow" width="28" height="28"
+                                class="img-fluid rounded-2">
+                            <span class="fs-5 fw-bold text-dark">AutoFlow</span>
+                        </div>
+                        <p class="small text-muted mb-0">Menos tareas. Más conversaciones que venden.</p>
+                    </div>
+    
+                    <!-- Columnas de navegación -->
+                    <div class="col-12 col-md-7">
+                        <div class="row gy-3">
+    
+                            <!--Explora -->
+                            <div class="col-4">
+                                <h6 class="text-uppercase fw-semibold text-dark fs-7 mb-2"
+                                    style="font-size: 0.75rem; letter-spacing: 0.5px;">Explora</h6>
+                                <ul class="list-unstyled small mb-0 d-flex flex-column gap-1">
+                                    <li><a href="#" class="text-decoration-none text-muted link-primary">Productos</a></li>
+                                    <li><a href="#" class="text-decoration-none text-muted link-primary">Nosotros</a></li>
+                                </ul>
+                            </div>
+    
+                            <!--Hablemos-->
+                            <div class="col-4">
+                                <h6 class="text-uppercase fw-semibold text-dark fs-7 mb-2"
+                                    style="font-size: 0.75rem; letter-spacing: 0.5px;">Hablemos</h6>
+                                <ul class="list-unstyled small mb-0 d-flex flex-column gap-1">
+                                    <li><a href="#" class="text-decoration-none text-muted link-primary">Contacto</a></li>
+                                    <li><a href="mailto:soporte@autoflow.mx"
+                                            class="text-decoration-none text-muted link-primary">soporte@autoflow.mx</a>
+                                    </li>
+                                </ul>
+                            </div>
+    
+                            <!--Tu comercio-->
+                            <div class="col-4">
+                                <h6 class="text-uppercase fw-semibold text-dark fs-7 mb-2"
+                                    style="font-size: 0.75rem; letter-spacing: 0.5px;">Tu comercio</h6>
+                                <ul class="list-unstyled small mb-0 d-flex flex-column gap-1">
+                                    <li><a href="#" class="text-decoration-none text-muted link-primary">Iniciar sesión</a>
+                                    </li>
+                                    <li><a href="#" class="text-decoration-none text-muted link-primary">Panel de
+                                            administración</a></li>
+                                </ul>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+    
+                <!--Divisor-->
+                <hr class="border-secondary-subtle my-3">
+    
+                <!-- Sección inferior -->
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small text-muted gap-2 pt-1"
+                    style="font-size: 0.75rem;">
+                    <div>
+                        <span>© 2026 AutoFlow · Proyecto Integrador</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <a href="#" class="text-decoration-none text-muted link-primary">Privacidad</a>
+                        <span>·</span>
+                        <a href="#" class="text-decoration-none text-muted link-primary">Términos de servicio</a>
+                        <span>·</span>
+                        <span>Hecho para PyMEs en México</span>
+                    </div>
+                </div>
+    
+            </div>
+        </footer>
+    </footer>
+    <!-- Termina Footer -->
+
+    <!-- Scripts de Bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7eb6f35784.js" crossorigin="anonymous"></script>
+</body>
+</html>
