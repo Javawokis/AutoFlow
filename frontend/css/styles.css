@@ -364,7 +364,12 @@ body {
     font-size: 0.75rem;
 }
 
+<<<<<<< HEAD
 /* Inicio Estilos de sección productos */
+=======
+/* Inicio Estilos sección productos*/
+
+>>>>>>> Ericka
 :root {
     --af-bg: #FAFAFC;
     --af-purple: #7C3AED;
@@ -581,4 +586,9 @@ body {
     color: var(--af-purple);
     transform: translateY(-1px);
   }
+<<<<<<< HEAD
 /* Fin Estilos de sección productos */
+=======
+
+/* Fin Estilos sección productos*/
+>>>>>>> Ericka
