@@ -1,0 +1,162 @@
+[
+  {
+    "id": "plan-esencial",
+    "category": "plan",
+    "icon": "bi-flower1",
+    "tag": "Plan mensual",
+    "isFeatured": false,
+    "title": "Plan Esencial",
+    "description": "El primer paso para vender sin estar siempre en línea.",
+    "price": 499,
+    "currency": "MXN / mes",
+    "features": [
+      "1 número de WhatsApp",
+      "Catálogo de hasta 50 productos",
+      "Respuestas automáticas básicas"
+    ]
+  },
+  {
+    "id": "plan-crecimiento",
+    "category": "plan",
+    "icon": "bi-rocket",
+    "tag": "Más popular",
+    "isFeatured": true,
+    "title": "Plan Crecimiento",
+    "description": "Para negocios que buscan escalar sus ventas automáticas.",
+    "price": 999,
+    "currency": "MXN / mes",
+    "features": [
+      "3 números de WhatsApp",
+      "Catálogo ilimitado de productos",
+      "Automatizaciones avanzadas e IA"
+    ]
+  },
+  {
+    "id": "plan-pro",
+    "category": "plan",
+    "icon": "bi-gem",
+    "tag": "Plan avanzado",
+    "isFeatured": false,
+    "title": "Plan Pro",
+    "description": "Potencia total y soporte prioritario para empresas consolidadas.",
+    "price": 1799,
+    "currency": "MXN / mes",
+    "features": [
+      "Números de WhatsApp ilimitados",
+      "Multi-agente para atención al cliente",
+      "Integraciones y webhooks personalizados"
+    ]
+  },
+  {
+    "id": "modulo-cotizador",
+    "category": "modulo",
+    "icon": "bi-calculator",
+    "tag": "Módulo adicional",
+    "isFeatured": false,
+    "title": "Cotizador",
+    "description": "Calcula presupuestos y cotizaciones automáticas en el chat.",
+    "price": 249,
+    "currency": "MXN / mes",
+    "features": [
+      "Generación de cotizaciones en PDF",
+      "Cálculo de precios por medidas o piezas",
+      "Envío directo al cliente por WhatsApp"
+    ]
+  },
+  {
+    "id": "modulo-catalogo",
+    "category": "modulo",
+    "icon": "bi-journal-text",
+    "tag": "Módulo adicional",
+    "isFeatured": false,
+    "title": "Catálogo",
+    "description": "Muestra tus productos y servicios de forma interactiva.",
+    "price": 199,
+    "currency": "MXN / mes",
+    "features": [
+      "Galería visual optimizada",
+      "Categorías y buscador integrado",
+      "Sincronización de stock en tiempo real"
+    ]
+  },
+  {
+    "id": "modulo-envios",
+    "category": "modulo",
+    "icon": "bi-truck",
+    "tag": "Módulo adicional",
+    "isFeatured": false,
+    "title": "Envíos",
+    "description": "Gestiona tarifas y zonas de cobertura de entrega fácilmente.",
+    "price": 299,
+    "currency": "MXN / mes",
+    "features": [
+      "Cálculo automático de costo por zona",
+      "Integración con guías de envío",
+      "Notificaciones de estado de entrega"
+    ]
+  },
+  {
+    "id": "modulo-hosting",
+    "category": "modulo",
+    "icon": "bi-cloud-arrow-up",
+    "tag": "Módulo adicional",
+    "isFeatured": false,
+    "title": "Hosting o Espacio en Nube",
+    "description": "Infraestructura robusta y segura para tus aplicaciones y datos.",
+    "price": 299,
+    "currency": "MXN / mes",
+    "features": [
+      "99.9% de uptime garantizado",
+      "Respaldos (backups) automáticos",
+      "Certificado SSL incluido"
+    ]
+  },
+  {
+    "id": "modulo-mantenimiento",
+    "category": "modulo",
+    "icon": "bi-tools",
+    "tag": "Módulo adicional",
+    "isFeatured": false,
+    "title": "Mantenimiento",
+    "description": "Soporte técnico continuo y actualizaciones preventivas.",
+    "price": 499,
+    "currency": "MXN / mes",
+    "features": [
+      "Monitoreo constante de sistemas",
+      "Actualizaciones de seguridad",
+      "Bolsa de horas para ajustes menores"
+    ]
+  },
+  {
+    "id": "modulo-dominio",
+    "category": "modulo",
+    "icon": "bi-globe",
+    "tag": "Módulo adicional",
+    "isFeatured": false,
+    "title": "Dominio",
+    "description": "Protege y personaliza la identidad digital de tu marca.",
+    "price": 249,
+    "currency": "MXN / mes",
+    "features": [
+      "Registro de dominio (.com o .mx)",
+      "Gestión de DNS simplificada",
+      "Renovación automática opcional"
+    ]
+  },
+  {
+    "id": "modulo-pasarela",
+    "category": "modulo",
+    "icon": "bi-credit-card",
+    "tag": "Módulo adicional",
+    "isFeatured": false,
+    "title": "Pasarela de Pagos",
+    "description": "Recibe pagos con tarjetas de crédito, débito y transferencias.",
+    "price": 399,
+    "currency": "MXN / mes",
+    "features": [
+      "Cobros seguros en línea",
+      "Compatibilidad con principales pasarelas",
+      "Reportes de transacciones detallados"
+    ]
+  }
+]
