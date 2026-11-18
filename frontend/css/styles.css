@@ -68,6 +68,15 @@ body {
     padding: 16px 16px 18px;
 }
 
+.fotodeperfil {
+    src: url('../assets/images/roble.jpg');
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
 .icono {
     width: 32px;
     height: 32px;
@@ -354,6 +363,43 @@ body {
     border-radius: 999px;
 }
 
+
+.card-custom {
+      border-radius: 24px;
+      border: none;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+    .form-control, .form-select {
+      border-radius: 12px;
+      padding: 12px 16px;
+      border-color: #e2e8f0;
+    }
+    .form-control:focus, .form-select:focus {
+      border-color: #8b5cf6;
+      box-shadow: 0 0 0 0.25rem rgba(139, 92, 246, 0.25);
+    }
+    .input-group-text {
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+      border-color: #e2e8f0;
+      background-color: #fff;
+    }
+    .input-group .form-control {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    .btn-purple {
+      background-color: #8b5cf6;
+      color: #fff;
+      border-radius: 12px;
+      padding: 14px;
+      font-weight: 600;
+      border: none;
+    }
+    .btn-purple:hover {
+      background-color: #7c3aed;
+      color: #fff;
+    }
 /* Refactor nav y footer */
 .footer-titulo {
     font-size: 0.75rem;
@@ -591,4 +637,7 @@ body {
 =======
 
 /* Fin Estilos sección productos*/
+<<<<<<< HEAD
 >>>>>>> Ericka
+=======
+>>>>>>> ea63146760d017db7068b4382599bb4a585b066a
