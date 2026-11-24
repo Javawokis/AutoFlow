@@ -630,3 +630,123 @@ body {
   }
 
 /* Fin Estilos sección productos*/
+
+/* Inicio de estilos sección Login */
+.login-bg {
+  background: linear-gradient(180deg, #f5f3ff 0%, #f9fafc 65%, #ffffff 100%);
+}
+
+.login-card {
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 12px 32px rgba(124, 77, 255, 0.08);
+}
+
+.login-store-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background-color: #f0eafe;
+  color: #7c4dff;
+  display: grid;
+  place-items: center;
+  font-size: 1.1rem;
+}
+
+.login-eyebrow {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: #7c4dff;
+}
+
+.login-title {
+  color: #1c1b29;
+  letter-spacing: -0.02em;
+}
+
+.login-label {
+  color: #1c1b29;
+}
+
+.login-input-addon {
+  background-color: #ffffff;
+  border-color: #e2e8f0;
+  border-right: none;
+  border-radius: 12px 0 0 12px;
+  color: #9ca3af;
+}
+
+.login-input {
+  border-color: #e2e8f0;
+  border-left: none;
+  border-radius: 0 12px 12px 0;
+  padding: 0.7rem 0.9rem;
+  font-size: 0.9rem;
+}
+
+.login-password-input {
+  border-right: none;
+  border-radius: 0;
+}
+
+.login-toggle-pass {
+  border: 1px solid #e2e8f0;
+  border-left: none;
+  border-radius: 0 12px 12px 0;
+  background-color: #ffffff;
+  color: #9ca3af;
+}
+
+.login-toggle-pass:hover,
+.login-toggle-pass:focus {
+  color: #7c4dff;
+  background-color: #ffffff;
+  border-color: #e2e8f0;
+}
+
+.login-input:focus {
+  border-color: #7c4dff;
+  box-shadow: none;
+}
+
+.login-input:focus + .login-toggle-pass,
+.input-group:focus-within .login-input-addon,
+.input-group:focus-within .login-input,
+.input-group:focus-within .login-toggle-pass {
+  border-color: #7c4dff;
+}
+
+.input-group:focus-within {
+  border-radius: 12px;
+  box-shadow: 0 0 0 0.2rem rgba(124, 77, 255, 0.18);
+}
+
+.login-link {
+  color: #7c4dff;
+}
+
+.login-link:hover {
+  color: #6a3df0;
+}
+
+.login-btn-submit {
+  background-color: #7c4dff;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.login-btn-submit:hover {
+  background-color: #6a3df0;
+  color: #ffffff;
+}
+
+.login-btn-submit:active {
+  transform: scale(0.99);
+}
+
+/* Fin de estilos sección Login */
