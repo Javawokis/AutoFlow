@@ -1,0 +1,232 @@
+
+/* Configuración general */
+body {
+    background-color: #f7f8fc;
+    color: #17142b;
+    font-family: Arial, sans-serif;
+}
+
+/* Encabezado */
+.back-link {
+    text-decoration: none;
+    color: #77748b;
+    font-size: 13px;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+header p {
+    font-size: 14px;
+    color: #858197 !important;
+}
+
+/* Tarjetas principales */
+.checkout-card {
+    border: 1px solid #e9e6f1;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: none;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.number {
+    color: #8052fa;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+/* Formularios */
+.form-label {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.form-control,
+.form-select {
+    border: 1px solid #e9e6f1;
+    border-radius: 9px;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #895afa;
+    box-shadow: 0 0 0 3px rgba(137, 90, 250, 0.12);
+}
+
+/* Métodos de pago */
+.payment-options {
+    display: flex;
+    gap: 5px;
+    background-color: #f0eaff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.payment-option {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 10px 5px;
+    border-radius: 7px;
+    color: #77748b;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.payment-option.active {
+    background-color: white;
+    color: #7543ef;
+    font-weight: 600;
+}
+
+/* Mensajes de seguridad */
+.security-message {
+    font-size: 11px;
+    color: #858197;
+}
+
+.security-message i {
+    color: #16a36a;
+    margin-right: 5px;
+}
+
+/* Resumen de productos */
+.product-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    font-size: 12px;
+}
+
+.product-icon {
+    background-color: #f0eaff;
+    color: #8755f5;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.product-info strong {
+    font-weight: 500;
+}
+
+.product-info small {
+    color: #858197;
+    font-size: 11px;
+    margin-top: 3px;
+}
+
+.product-item > strong {
+    font-size: 12px;
+}
+
+/* Totales */
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.total-row span {
+    color: #858197;
+}
+
+.total-final {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 19px;
+}
+
+.billing-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    gap: 5px;
+}
+
+.billing-info strong {
+    color: #7543ef;
+}
+
+.billing-info small {
+    color: #858197;
+}
+
+/* Pago seguro */
+.secure-payment {
+    background-color: #f0eaff;
+    color: #7543ef;
+    text-align: center;
+    border-radius: 9px;
+    padding: 11px;
+    font-size: 12px;
+}
+
+/* Botón principal */
+.btn-pay {
+    background-color: #8755f5;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    padding: 13px;
+    font-size: 13px;
+    transition: background-color 0.2s;
+}
+
+.btn-pay:hover {
+    background-color: #7040dc;
+    color: white;
+}
+
+.btn-pay i {
+    margin-left: 5px;
+}
+
+/* Términos */
+.terms-text {
+    font-size: 10px;
+    color: #858197;
+    line-height: 1.6;
+}
+
+/* Adaptación a móviles */
+@media (max-width: 767px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .card-body {
+        padding: 20px !important;
+    }
+
+    .payment-option {
+        font-size: 10px;
+    }
+
+    .total-final {
+        font-size: 17px;
+    }
+}
