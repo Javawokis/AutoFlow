@@ -631,6 +631,82 @@ body {
 
 /* Fin Estilos sección productos*/
 
+/* ===== Inicio sección Registro de Usuario by Roble===== */
+
+/* Fondo de pantalla: degradado colores lila, blanco y celeste */
+.registro-page {
+    min-width: 100vh;
+    background: linear-gradient(120deg, #f6f2ff 0%, #f8f8fc 50%, #eef9fb 100%);
+}
+
+/*Tarjeta del Formulario: se agrega un borde al .card-custom */
+.registro-card {
+    border: 1px solid var(--border);
+}
+
+/* Campo de contraseña: candado + input + ojo se ven como una sola caja con borde.
+   Se limita a .registro-page para no afectar otros .input-group del proyecto. */
+.registro-page .input-group-text {
+    border-right: 0;
+    padding-right: 0;
+    color: var(--muted);
+}
+
+.registro-page .input-group .form-control {
+    border-left: 0;
+    border-right: 0;
+    padding-left: 12px;
+}
+
+.registro-page .input-group .form-control:focus {
+    box-shadow: none;
+}
+
+/* Al enfocar cualquier parte del grupo, resalta morado todo el grupo */
+.registro-page .input-group:focus-within {
+    border-radius: 12px;
+    box-shadow: 0 0 0 0.25rem rgba(139, 92, 246, 0.25);
+}
+
+.registro-page .input-group:focus-within .input-group-text,
+.registro-page .input-group:focus-within .form-control,
+.registro-page .input-group:focus-within .btn-ojo {
+    border-color: #8b5cf6;
+}
+
+/* Estado de error (el JS agrega la clase "is-invalid" al input): el grupo completo se pinta de rojo */
+.registro-page .input-group:has(.is-invalid) .input-group-text,
+.registro-page .input-group:has(.is-invalid) .btn-ojo {
+    border-color: #dc3545;
+}
+
+/* Botón del ojo (mostrar/ocultar contraseña) */
+.btn-ojo {
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+    border-left: 0;
+    border-radius: 0 12px 12px 0;
+    padding: 0 16px;
+    color: var(--muted);
+}
+
+.btn-ojo:hover {
+    background-color: #fff;
+    color: var(--primary);
+}
+
+/* Enlace morado */
+.link-af {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.link-af:hover {
+    text-decoration: underline;
+}
+
+/* ===== Fin sección Registro de Usuario by Roble===== */
 /* Inicio de estilos sección Login */
 .login-bg {
   background: linear-gradient(180deg, #f5f3ff 0%, #f9fafc 65%, #ffffff 100%);
