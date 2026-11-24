@@ -61,9 +61,177 @@
             <span class="text-muted small" id="solutions-count">10 soluciones disponibles</span>
           </div>
       
-          <!-- Grid de Productos (Contenedor único limpio) -->
-          <div class="row g-4" id="products-container">
-            <!-- Las tarjetas se inyectan dinámicamente mediante JS -->
+          <!-- Grid de Productos (Planes y Módulos) -->
+          <div class="row g-4" id="products-grid">
+      
+            <!-- Plan Esencial -->
+            <div class="col-md-6 col-lg-4 product-item" data-category="plan">
+              <div class="plan-card">
+                <div>
+                  <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="plan-icon"><i class="bi bi-flower1"></i></div>
+                    <span class="plan-tag">Plan mensual</span>
+                  </div>
+                  <h3 class="h4 fw-bold mb-1">Plan Esencial</h3>
+                  <p class="text-muted small mb-4">El primer paso para vender sin estar siempre en línea.</p>
+                  
+                  <div class="d-flex align-items-baseline gap-1 mb-2">
+                    <span class="plan-price">$499</span>
+                    <span class="plan-currency">MXN / mes</span>
+                  </div>
+      
+                  <ul class="feature-list">
+                    <li><i class="bi bi-check2"></i> <span>1 número de WhatsApp</span></li>
+                    <li><i class="bi bi-check2"></i> <span>Catálogo de hasta 50 productos</span></li>
+                    <li><i class="bi bi-check2"></i> <span>Respuestas automáticas básicas</span></li>
+                  </ul>
+                </div>
+                <button class="btn btn-af-outline add-to-cart" data-product="Plan Esencial" data-price="499">
+                  Agregar al Carrito <i class="bi bi-plus-lg ms-1"></i>
+                </button>
+              </div>
+            </div>
+      
+            <!-- Plan Crecimiento (Recomendado) -->
+            <div class="col-md-6 col-lg-4 product-item" data-category="plan">
+              <div class="plan-card featured">
+                <div>
+                  <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="plan-icon"><i class="bi bi-rocket-takeoff"></i></div>
+                    <span class="plan-tag recommended"><i class="bi bi-stars me-1"></i> Recomendado</span>
+                  </div>
+                  <h3 class="h4 fw-bold mb-1">Plan Crecimiento</h3>
+                  <p class="text-muted small mb-4">Tu operación conectada, de la consulta a la entrega.</p>
+                  
+                  <div class="d-flex align-items-baseline gap-1 mb-2">
+                    <span class="plan-price">$999</span>
+                    <span class="plan-currency">MXN / mes</span>
+                  </div>
+      
+                  <ul class="feature-list">
+                    <li><i class="bi bi-check2"></i> <span>Todo lo del Plan Esencial</span></li>
+                    <li><i class="bi bi-check2"></i> <span>Cotizador + Catálogo + Envíos</span></li>
+                    <li><i class="bi bi-check2"></i> <span>Hasta 500 productos y 3 usuarios</span></li>
+                  </ul>
+                </div>
+                <button class="btn btn-af-primary add-to-cart" data-product="Plan Crecimiento" data-price="999">
+                  Agregar al Carrito <i class="bi bi-plus-lg ms-1"></i>
+                </button>
+              </div>
+            </div>
+      
+            <!-- Plan Pro -->
+            <div class="col-md-6 col-lg-4 product-item" data-category="plan">
+              <div class="plan-card">
+                <div>
+                  <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="plan-icon"><i class="bi bi-award"></i></div>
+                    <span class="plan-tag">Plan mensual</span>
+                  </div>
+                  <h3 class="h4 fw-bold mb-1">Plan Pro</h3>
+                  <p class="text-muted small mb-4">Más capacidad y control para un negocio que no se detiene.</p>
+                  
+                  <div class="d-flex align-items-baseline gap-1 mb-2">
+                    <span class="plan-price">$1,799</span>
+                    <span class="plan-currency">MXN / mes</span>
+                  </div>
+      
+                  <ul class="feature-list">
+                    <li><i class="bi bi-check2"></i> <span>Todo lo del Plan Crecimiento</span></li>
+                    <li><i class="bi bi-check2"></i> <span>Productos y usuarios ilimitados</span></li>
+                    <li><i class="bi bi-check2"></i> <span>Reportes y soporte prioritario</span></li>
+                  </ul>
+                </div>
+                <button class="btn btn-af-outline add-to-cart" data-product="Plan Pro" data-price="1799">
+                  Agregar al Carrito <i class="bi bi-plus-lg ms-1"></i>
+                </button>
+              </div>
+            </div>
+      
+            <!-- Módulo Cotizador -->
+            <div class="col-md-6 col-lg-4 product-item" data-category="modulo">
+              <div class="plan-card">
+                <div>
+                  <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="plan-icon"><i class="bi bi-calculator"></i></div>
+                    <span class="plan-tag">Módulo mensual</span>
+                  </div>
+                  <h3 class="h4 fw-bold mb-1">Cotizador</h3>
+                  <p class="text-muted small mb-4">Cotizaciones claras y automáticas en cada conversación.</p>
+                  
+                  <div class="d-flex align-items-baseline gap-1 mb-2">
+                    <span class="plan-price">$249</span>
+                    <span class="plan-currency">MXN / mes</span>
+                  </div>
+      
+                  <ul class="feature-list">
+                    <li><i class="bi bi-check2"></i> <span>Cálculo de precios y cantidades</span></li>
+                    <li><i class="bi bi-check2"></i> <span>Descuentos por volumen</span></li>
+                    <li><i class="bi bi-check2"></i> <span>Resumen de pedido al instante</span></li>
+                  </ul>
+                </div>
+                <button class="btn btn-af-outline add-to-cart" data-product="Cotizador" data-price="249">
+                  Agregar al Carrito <i class="bi bi-plus-lg ms-1"></i>
+                </button>
+              </div>
+            </div>
+      
+            <!-- Módulo Catálogo -->
+            <div class="col-md-6 col-lg-4 product-item" data-category="modulo">
+              <div class="plan-card">
+                <div>
+                  <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="plan-icon"><i class="bi bi-grid-1x2"></i></div>
+                    <span class="plan-tag">Módulo mensual</span>
+                  </div>
+                  <h3 class="h4 fw-bold mb-1">Catálogo</h3>
+                  <p class="text-muted small mb-4">Tus productos, siempre listos para compartir y vender.</p>
+                  
+                  <div class="d-flex align-items-baseline gap-1 mb-2">
+                    <span class="plan-price">$199</span>
+                    <span class="plan-currency">MXN / mes</span>
+                  </div>
+      
+                  <ul class="feature-list">
+                    <li><i class="bi bi-check2"></i> <span>Fotos, variantes y precios</span></li>
+                    <li><i class="bi bi-check2"></i> <span>Disponibilidad de productos</span></li>
+                    <li><i class="bi bi-check2"></i> <span>Envío directo por WhatsApp</span></li>
+                  </ul>
+                </div>
+                <button class="btn btn-af-outline add-to-cart" data-product="Catálogo" data-price="199">
+                  Agregar al Carrito <i class="bi bi-plus-lg ms-1"></i>
+                </button>
+              </div>
+            </div>
+      
+            <!-- Módulo Envíos -->
+            <div class="col-md-6 col-lg-4 product-item" data-category="modulo">
+              <div class="plan-card">
+                <div>
+                  <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="plan-icon"><i class="bi bi-truck"></i></div>
+                    <span class="plan-tag">Módulo mensual</span>
+                  </div>
+                  <h3 class="h4 fw-bold mb-1">Envíos</h3>
+                  <p class="text-muted small mb-4">De la dirección de tu cliente a una entrega organizada.</p>
+                  
+                  <div class="d-flex align-items-baseline gap-1 mb-2">
+                    <span class="plan-price">$299</span>
+                    <span class="plan-currency">MXN / mes</span>
+                  </div>
+      
+                  <ul class="feature-list">
+                    <li><i class="bi bi-check2"></i> <span>Captura de datos de entrega</span></li>
+                    <li><i class="bi bi-check2"></i> <span>Cálculo por zona de cobertura</span></li>
+                    <li><i class="bi bi-check2"></i> <span>Seguimiento del estado de envío</span></li>
+                  </ul>
+                </div>
+                <button class="btn btn-af-outline add-to-cart" data-product="Envíos" data-price="299">
+                  Agregar al Carrito <i class="bi bi-plus-lg ms-1"></i>
+                </button>
+              </div>
+            </div>
+      
           </div>
       
           <!-- Banner CTA Contacto -->
@@ -91,7 +259,44 @@
       
         </div>
       </main>
+
     <!-- Fin Sección Productos -->
+
+    <!-- Inicio de filtros -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const filterButtons = document.querySelectorAll('.filter-btn');
+          const productItems = document.querySelectorAll('.product-item');
+          const countLabel = document.getElementById('solutions-count');
+      
+          filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+              // Actualizar estado activo del botón
+              filterButtons.forEach(b => b.classList.remove('active'));
+              btn.classList.add('active');
+      
+              const filterValue = btn.getAttribute('data-filter');
+              let visibleCount = 0;
+      
+              productItems.forEach(item => {
+                if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                  item.style.display = 'block';
+                  visibleCount++;
+                } else {
+                  item.style.display = 'none';
+                }
+              });
+      
+              countLabel.textContent = `${visibleCount} ${visibleCount === 1 ? 'solución disponible' : 'soluciones disponibles'}`;
+            });
+          });
+        });
+      </script>
+
+      <!--Fin de filtros (Todos, planes, modulos)-->
+
+      <!--Termina Sección Productos-->
 
     <!-- Inicia Footer -->
     <div data-include="../components/footer.html"></div>
