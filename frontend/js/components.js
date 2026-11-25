@@ -31,3 +31,29 @@ document.addEventListener("DOMContentLoaded", async () => {
     // Solo se ejecuta cuando el header ya existe
     marcarEnlaceActivo()
 })
+
+const correo = document.getElementById("email")
+const contraseña = document.getElementById("login-password")
+const formulario = document.getElementById("login-form")
+
+
+function validarEmail(correo) {
+    var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,6}$/;
+    if (!regex.test(correo)) {
+        return false;
+    }
+    return true;
+}
+
+function validarContraseña(cantraseña){
+  const reglas = {
+    longitud: password.length >= 8,
+    mayuscula: /[A-Z]/.test(contraseña),
+    minuscula: /[a-z]/.test(contraseña),
+    numero: /\d/.test(contraseña),
+    simbolo: /[!@#$%^&*(),.?":{}|<>]/.test(contraseña),
+  };
+
+  const esValida = Object.values(reglas).every(Boolean);
+  return { esValida, reglas };
+}
